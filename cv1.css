@@ -1,0 +1,42 @@
+body{
+   background-image:url(https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+p{
+color:#0000;
+font-size:20Px;
+
+}
+title{
+color:Red;
+Border:3px;
+}
+h1{
+color:Black;
+  border-style: solid;
+  border-width: 3px;
+}
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+table {
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+td{
+color:Black;
+font-size:20px;
+}
+th{
+font-size:20px;
+}
+
+li{
+font-size:15Px;
+}
