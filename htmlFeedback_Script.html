@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body background="https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=891&q=80">
+<Title>Your Feedback</Title>
+
+<h3>We encourage you to drop a mail to:<br>
+<u>avinashkrgaurav711@gmail.com</u></form></h3>
+<h1 ><em>I am thankful for your valuable feedback.</em></h1>
+
+<form id='name-form'>
+  <p>
+    <label>Please Enter Your full Name:<label>:<br>
+	<input type='text' name='fullName' value="Full Name">
+  </p>
+  <p>
+    <input type='submit' value="Submit">
+  </p>
+</form>
+<p id="result"></p>
+<script>
+    
+	var form = document.getElementById('name-form');
+	form.onsubmit = function(e) {
+	e.preventDefault();
+	var name = form.fullName.value;
+	
+	result.innerHTML= "<b>Hi"+"!"+" " + name +","+ " " + "<b>Reach out to me @ <u>avinashkrgaurav711@gmail.com</u> and Contact me at: 9304522660</b>"
+	
+	this.reset(); 
+	console.log(form.fullName);
+	};
+</script> 
+<p>Click the "Submit" button to fetch my details.<span>&#9786;</span>.</p>
+
+<p><strong>Small conversion game</strong></p>
+<form action="weightconversionpage.html">
+<input type="Submit" value="KG to Lbs">
+</form>
+</form>
+<p><strong>Click Above button to start conversion</strong></p>
+<br>
+<form action="index.html">
+  <input type="Submit" value="HomePage">
+  </form>
+
+</body>
+</html>
