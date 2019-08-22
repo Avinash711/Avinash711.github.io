@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Vocab Test</title>
+	 <script type='text/javascript'>
+	  function buttonclick()
+	  {
+	    var rd12 = document.getElementById('val2');
+		var rd23 = document.getElementById('val7');
+		var rd33 = document.getElementById('val11');
+		var rd43 = document.getElementById('val15');
+		var rd54 = document.getElementById('val20');
+		var rd62 = document.getElementById('val22');
+		var rd73 = document.getElementById('val27');
+		var rd83 = document.getElementById('val31');
+		var rd93 = document.getElementById('val35');
+		var rd103 = document.getElementById('val39');
+		//document.write(rd93.value+" "+rd103.value);
+		
+		var count = 0
+		/*## Checking only for correct answers, so even if no option is selected its taken as wrong value,
+		     So as to avoid the loops checks for all 40 radio buttons, with this logic no need to check for all 
+			 40 test cases(for 40 radio buttons).
+		*/
+
+		//document.write(rd12.value);
+		//##Conditional checks for rd12
+		if(rd12.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo1').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo1').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd23
+		if(rd23.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo2').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo2').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd33
+		if(rd33.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo3').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo3').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd43
+		if(rd43.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo4').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo4').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd54
+		if(rd54.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo5').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo5').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd62
+		if(rd62.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo6').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo6').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd73
+		if(rd73.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo7').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo7').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd83
+		if(rd83.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo8').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo8').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd93
+		if(rd93.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo9').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo9').innerHTML="Oops..Not Correct.";
+		}
+		//##Conditional checks for rd103
+		if(rd103.checked == true )
+		{
+		    count= count+1
+			document.getElementById('demo10').innerHTML="Yes..Correct.";
+		}
+		else{
+		     document.getElementById('demo10').innerHTML="Oops..Not Correct.";
+		}
+		//document.write(count);
+		
+		//#No of Correct answers count section.
+		if(count >=0 && count<=4){
+		   var score = count;
+		   document.getElementById('result').innerHTML="Your Score is :: "+score+","+" <h2>No worries!! It happens sometime, Keep Practicing.</h2>";
+		}
+		else if(count>=5 && count<=7){
+		   var score = count;
+		   document.getElementById('result').innerHTML="Your Score is :: "+score+","+" <h1>Good Job! We expect more!!.</h1>";
+		}
+		else{
+		   var score = count;
+		   document.getElementById('result').innerHTML="Your Score is :: "+score+","+" <h1>You Rock!! **Bravo**</h1>";
+		}
+	  }
+	
+	 </script>
+  </head>
+   <body>
+   
+   <style>
+        body {
+	    background-image: url("http://img.fliptab.io/ocean/1920x1200/105630207.jpg");
+        } 
+
+    </style>
+    <h1>Choose best option for <I><strong>Synonyms/Antonym</Strong></I> of given word.<Span style="float:right">By: Avinash Gaurav</span></h1>
+	<h2>**Note** 0<= Score <= 4 :: <I>Keep Practicing</I>, 8<=Score ::<b>You Rock!! **Bravo**</b></h2>
+	<h2> 5 =< Score <= 7 :: <I>Good Job! We expect more!!</I></h2>
+	<h2>
+	
+    <!-- First Question -->
+	<h2>1. Synonym of <b>Advice</b> </h2>
+      <input type='radio' name ='q1' id='val1' value="Council">Council</input><br>
+	  <input type='radio' name ='q1' id='val2' value="Counsel" >Counsel</input><br><!--correct-->
+	  <input type='radio' name ='q1' id='val3' value="Practice">Practice</input><br>
+	  <input type='radio' name ='q1' id='val4' value="Proposal">Proposal</input><br>
+	<h2 color='Red 'id="demo1">Correct/Not Correct</h2>  
+	<!-- 2nd Question -->
+	<h2>2. Synonym of <b>Miserable</b> </h2>
+      <input type='radio' name ='q2' id='val5' value="Object">Object</input><br>
+	  <input type='radio' name ='q2' id='val6' value="Abstract">Abstract</input><br>
+	  <input type='radio' name ='q2' id='val7' value="Abject" >Abject</input><br><!--correct-->
+	  <input type='radio' name ='q2' id='val8' value="Obstruct" >Obstruct</input><br>
+	<h2 id="demo2">Correct/Not Correct</h2>  
+	
+	<!-- 3rd Question -->
+	<h2>3. Synonym of <b>Quote</b> </h2>
+      <input type='radio'  name ='q3' id='val9' value="Sight" >Sight</input><br>
+	  <input type='radio'  name ='q3' id='val10' value="" >Sue</input><br>
+	  <input type='radio' name ='q3' id='val11' value="Cite">Cite</input><br><!--correct-->
+	  <input type='radio' name ='q3' id='val12' value="Sigh" >Sigh</input><br>
+	<h2 id="demo3">Correct/Not Correct</h2>  
+	<!-- 4th Question -->  
+	<h2>4. Synonym of <b>Harmony</b> </h2>
+      <input type='radio'  name ='q4' id='val13' value="Cemetery" >Cemetery</input><br>
+	  <input type='radio'  name ='q4' id='val14' value="Ceremony" >Ceremony</input><br>
+	  <input type='radio'  name ='q4' id='val15'value="Symmetry">Symmetry</input><br><!--correct-->
+	  <input type='radio'  name ='q4' id='val16' value="Hierarchy">Hierarchy</input><br>
+	 <h2 id="demo4">Correct/Not Correct</h2> 
+	<!-- 5th Question -->
+	<h2>5. Synonym of <b>Unlawful</b> </h2>
+      <input type='radio'  name ='q5' id='val17' value="Elicit" >Elicit</input><br>
+	  <input type='radio'  name ='q5' id='val18' value="Draw" >Draw</input><br>
+	  <input type='radio'  name ='q5' id='val19' value="Illegitimate" >Illegitimate</input><br>
+	  <input type='radio'  name ='q5' id='val20' value="Illicit" >Illicit</input><br><!--correct-->
+	 <h2 id="demo5">Correct/Not Correct</h2> 
+	<!-- 6th Question -->
+	<h2>6. Synonym of <b>Haughty</b> </h2>
+      <input type='radio'  name ='q6' id='val21' value="Imperial">Imperial</input><br>
+	  <input type='radio'  name ='q6' id='val22' value="Imperious" >Imperious</input><br><!--correct-->
+	  <input type='radio'  name ='q6' id='val23'value="Adamant">Adamant</input><br>
+	  <input type='radio'  name ='q6' id='val24' value="Empire">Empire</input><br>
+	<h2 id="demo6">Correct/Not Correct</h2>  
+	<!-- 7th Question -->
+	<h2>7. Synonym of <b>Wise</b> </h2>
+      <input type='radio' name ='q7' id='val25' value="Momentous">Momentous</input><br>
+	  <input type='radio' name ='q7' id='val26' value="Pragmatic">Pragmatic</input><br>
+	  <input type='radio' name ='q7' id='val27' value="Judicious">Judicious</input><br><!--correct-->
+	  <input type='radio' name ='q7' id='val28' value="Delay">Delay</input><br>
+	<h2 id="demo7">Correct/Not Correct</h2>  
+	<!-- 8th Question -->
+	<h2>8. Synonym of <b>Loquacious</b> </h2>
+      <input type='radio' name ='q8' id='val29' value="Victorian">Victorian</input><br>
+	  <input type='radio' name ='q8' id='val30' value="Bombastic">Bombastic</input><br>
+	  <input type='radio' name ='q8' id='val31' value="Verbose">Verbose</input><br><!--correct-->
+	  <input type='radio' name ='q8' id='val32' value="Ambiguous">Ambiguous</input><br>
+	<h2 id="demo8">Correct/Not Correct</h2>  
+	<!-- 9th Question -->
+	<h2>9. Synonym of <b>Courageous</b> </h2>
+      <input type='radio' name ='q9' id='val33' value="Fickle">Fickle</input><br>
+	  <input type='radio' name ='q9' id='val34' value="insipid">insipid</input><br>
+	  <input type='radio' name ='q9' id='val35' value="Timorous">Timorous</input><br><!--correct-->
+	  <input type='radio' name ='q9' id='val36' value="Council">Fearless</input><br>
+	 <h2 id="demo9">Correct/Not Correct</h2> 
+	<!-- 10th Question -->  
+	<h2>10. Synonym of <b>Gullible</b> </h2>
+      <input type='radio' name ='q10' id='val37' value="Credible">Credible</input><br>
+	  <input type='radio' name ='q10' id='val38' value="Believable">Believable</input><br>
+	  <input type='radio' name ='q10' id='val39' value="Credulous">Credulous</input><br><!--correct-->
+	  <input type='radio' name ='q10' id='val40' value="Fallible">Fallible</input><br>
+	  <h2 id="demo10">Correct/Not Correct</h2> 
+	  <br>
+	  <h1 id='result'>Score will be displayed here, Once you submit.</h1>
+	  <button onclick='buttonclick()'>Click to See Result.</button>
+	 </body>
