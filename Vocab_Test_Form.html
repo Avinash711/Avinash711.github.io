@@ -32,6 +32,7 @@
 		}
 		else{
 		     document.getElementById('demo1').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l1').style.visibility="visible";
 		}
 		//##Conditional checks for rd23
 		if(rd23.checked == true )
@@ -41,6 +42,7 @@
 		}
 		else{
 		     document.getElementById('demo2').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l2').style.visibility="visible";
 		}
 		//##Conditional checks for rd33
 		if(rd33.checked == true )
@@ -50,6 +52,7 @@
 		}
 		else{
 		     document.getElementById('demo3').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l3').style.visibility="visible";
 		}
 		//##Conditional checks for rd43
 		if(rd43.checked == true )
@@ -59,6 +62,7 @@
 		}
 		else{
 		     document.getElementById('demo4').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l4').style.visibility="visible";
 		}
 		//##Conditional checks for rd54
 		if(rd54.checked == true )
@@ -68,6 +72,7 @@
 		}
 		else{
 		     document.getElementById('demo5').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l5').style.visibility="visible";
 		}
 		//##Conditional checks for rd62
 		if(rd62.checked == true )
@@ -77,6 +82,7 @@
 		}
 		else{
 		     document.getElementById('demo6').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l6').style.visibility="visible";
 		}
 		//##Conditional checks for rd73
 		if(rd73.checked == true )
@@ -86,6 +92,7 @@
 		}
 		else{
 		     document.getElementById('demo7').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l7').style.visibility="visible";
 		}
 		//##Conditional checks for rd83
 		if(rd83.checked == true )
@@ -95,6 +102,7 @@
 		}
 		else{
 		     document.getElementById('demo8').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l8').style.visibility="visible";
 		}
 		//##Conditional checks for rd93
 		if(rd93.checked == true )
@@ -104,6 +112,7 @@
 		}
 		else{
 		     document.getElementById('demo9').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l9').style.visibility="visible";
 		}
 		//##Conditional checks for rd103
 		if(rd103.checked == true )
@@ -113,6 +122,7 @@
 		}
 		else{
 		     document.getElementById('demo10').innerHTML="Oops..Not Correct.";
+		     document.getElementById('l10').style.visibility="visible";
 		}
 		//document.write(count);
 		
@@ -149,7 +159,8 @@
     <!-- First Question -->
 	<h2>1. Synonym of <b>Advice</b> </h2>
       <input type='radio' name ='q1' id='val1' value="Council">Council</input><br>
-	  <input type='radio' name ='q1' id='val2' value="Counsel" >Counsel</input><br><!--correct-->
+	  <input type='radio' name ='q1' id='val2' value="Counsel" >Counsel&nbsp
+          <span><label id='l1' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio' name ='q1' id='val3' value="Practice">Practice</input><br>
 	  <input type='radio' name ='q1' id='val4' value="Proposal">Proposal</input><br>
 	<h2 color='Red 'id="demo1">Correct/Not Correct</h2>  
@@ -157,7 +168,8 @@
 	<h2>2. Synonym of <b>Miserable</b> </h2>
       <input type='radio' name ='q2' id='val5' value="Object">Object</input><br>
 	  <input type='radio' name ='q2' id='val6' value="Abstract">Abstract</input><br>
-	  <input type='radio' name ='q2' id='val7' value="Abject" >Abject</input><br><!--correct-->
+	  <input type='radio' name ='q2' id='val7' value="Abject" >Abject&nbsp
+          <span><label id='l2' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio' name ='q2' id='val8' value="Obstruct" >Obstruct</input><br>
 	<h2 id="demo2">Correct/Not Correct</h2>  
 	
@@ -165,14 +177,16 @@
 	<h2>3. Synonym of <b>Quote</b> </h2>
       <input type='radio'  name ='q3' id='val9' value="Sight" >Sight</input><br>
 	  <input type='radio'  name ='q3' id='val10' value="" >Sue</input><br>
-	  <input type='radio' name ='q3' id='val11' value="Cite">Cite</input><br><!--correct-->
+	  <input type='radio' name ='q3' id='val11' value="Cite">Cite&nbsp
+          <span><label id='l3' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio' name ='q3' id='val12' value="Sigh" >Sigh</input><br>
 	<h2 id="demo3">Correct/Not Correct</h2>  
 	<!-- 4th Question -->  
 	<h2>4. Synonym of <b>Harmony</b> </h2>
       <input type='radio'  name ='q4' id='val13' value="Cemetery" >Cemetery</input><br>
 	  <input type='radio'  name ='q4' id='val14' value="Ceremony" >Ceremony</input><br>
-	  <input type='radio'  name ='q4' id='val15'value="Symmetry">Symmetry</input><br><!--correct-->
+	  <input type='radio'  name ='q4' id='val15'value="Symmetry">Symmetry&nbsp
+          <span><label id='l4' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio'  name ='q4' id='val16' value="Hierarchy">Hierarchy</input><br>
 	 <h2 id="demo4">Correct/Not Correct</h2> 
 	<!-- 5th Question -->
@@ -180,12 +194,14 @@
       <input type='radio'  name ='q5' id='val17' value="Elicit" >Elicit</input><br>
 	  <input type='radio'  name ='q5' id='val18' value="Draw" >Draw</input><br>
 	  <input type='radio'  name ='q5' id='val19' value="Illegitimate" >Illegitimate</input><br>
-	  <input type='radio'  name ='q5' id='val20' value="Illicit" >Illicit</input><br><!--correct-->
+	  <input type='radio'  name ='q5' id='val20' value="Illicit" >Illicit&nbsp 
+          <span><label id='l5' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	 <h2 id="demo5">Correct/Not Correct</h2> 
 	<!-- 6th Question -->
 	<h2>6. Synonym of <b>Haughty</b> </h2>
       <input type='radio'  name ='q6' id='val21' value="Imperial">Imperial</input><br>
-	  <input type='radio'  name ='q6' id='val22' value="Imperious" >Imperious</input><br><!--correct-->
+	  <input type='radio'  name ='q6' id='val22' value="Imperious" >Imperious&nbsp
+          <span><label id='l6' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio'  name ='q6' id='val23'value="Adamant">Adamant</input><br>
 	  <input type='radio'  name ='q6' id='val24' value="Empire">Empire</input><br>
 	<h2 id="demo6">Correct/Not Correct</h2>  
@@ -193,28 +209,32 @@
 	<h2>7. Synonym of <b>Wise</b> </h2>
       <input type='radio' name ='q7' id='val25' value="Momentous">Momentous</input><br>
 	  <input type='radio' name ='q7' id='val26' value="Pragmatic">Pragmatic</input><br>
-	  <input type='radio' name ='q7' id='val27' value="Judicious">Judicious</input><br><!--correct-->
+	  <input type='radio' name ='q7' id='val27' value="Judicious">Judicious&nbsp
+          <span><label id='l7' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio' name ='q7' id='val28' value="Delay">Delay</input><br>
 	<h2 id="demo7">Correct/Not Correct</h2>  
 	<!-- 8th Question -->
 	<h2>8. Synonym of <b>Loquacious</b> </h2>
       <input type='radio' name ='q8' id='val29' value="Victorian">Victorian</input><br>
 	  <input type='radio' name ='q8' id='val30' value="Bombastic">Bombastic</input><br>
-	  <input type='radio' name ='q8' id='val31' value="Verbose">Verbose</input><br><!--correct-->
+	  <input type='radio' name ='q8' id='val31' value="Verbose">Verbose&nbsp 
+           <span><label id='l8' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio' name ='q8' id='val32' value="Ambiguous">Ambiguous</input><br>
 	<h2 id="demo8">Correct/Not Correct</h2>  
 	<!-- 9th Question -->
 	<h2>9. Synonym of <b>Courageous</b> </h2>
       <input type='radio' name ='q9' id='val33' value="Fickle">Fickle</input><br>
 	  <input type='radio' name ='q9' id='val34' value="insipid">insipid</input><br>
-	  <input type='radio' name ='q9' id='val35' value="Fearless">Fearless</input><br><!--correct-->
+	  <input type='radio' name ='q9' id='val35' value="Fearless">Fearless&nbsp
+          <span><label id='l9' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio' name ='q9' id='val36' value="Timid">Timid</input><br>
 	 <h2 id="demo9">Correct/Not Correct</h2> 
 	<!-- 10th Question -->  
 	<h2>10. Synonym of <b>Gullible</b> </h2>
       <input type='radio' name ='q10' id='val37' value="Cynical">Cynical</input><br>
 	  <input type='radio' name ='q10' id='val38' value="Believable">Believable</input><br>
-	  <input type='radio' name ='q10' id='val39' value="Credulous">Credulous</input><br><!--correct-->
+	  <input type='radio' name ='q10' id='val39' value="Credulous">Credulous&nbsp
+          <span><label id='l10' style="color:red; visibility:hidden">Correct Option</label></span></input><br><!--correct-->
 	  <input type='radio' name ='q10' id='val40' value="Fallible">Fallible</input><br>
 	  <h2 id="demo10">Correct/Not Correct</h2> 
 	  <br>
